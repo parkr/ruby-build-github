@@ -1,19 +1,35 @@
 ## ruby-build-github
 
 Custom definitions to install custom rubies with `ruby-build`. Mostly GitHub Ruby distributions.
+For use with `ruby-build` and `rbenv`.
 
-### Instructions
+## Installation
+
+### Dependencies
 
 Build dependencies (through `apt-get` or `brew`):
 
 * `autoconf`
 * `bison`
 
-Clone the repo, and run:
+### Download the Plugin
 
+Then install this repository into your rbenv's plugins directory.
+
+```bash
+$ git clone git://github.com/parkr/ruby-build-github.git "$(rbenv root)/plugins/ruby-build-github"
 ```
-./install.sh support/2.1.0-github
+
+## Installing a GitHub Ruby
+
+It's just like installing any other Ruby.
+
+```bash
+$ rbenv install <DEFINITION>
 ```
 
-This will clone [GitHub's Ruby fork](https://github.com/github/ruby) and install Ruby `2.1.0-github` as an option for `rbenv install`.
+Unsure which are available? Get a list here:
 
+```bash
+$ rbenv install --list | grep github
+```
