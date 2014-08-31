@@ -20,7 +20,7 @@ Then install this repository into your rbenv's plugins directory.
 $ git clone git://github.com/parkr/ruby-build-github.git "$(rbenv root)/plugins/ruby-build-github"
 ```
 
-## Installing a GitHub Ruby
+## Installing a GitHub Ruby (via rbenv/ruby-build)
 
 It's just like installing any other Ruby.
 
@@ -33,3 +33,6 @@ Unsure which are available? Get a list here:
 ```bash
 $ rbenv install --list | grep github
 ```
+
+`rbenv install` can also take a path, so you can also specify the full path
+to any of these build definitions.
